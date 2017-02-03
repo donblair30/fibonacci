@@ -33,7 +33,9 @@ public class Fibonacci {
 		}
 		return tmpFib; 
 	}
+}
 
+class Tester {	
 	/** 
 	 * The main routine is simply a test harness for Fibonacci
 	 * @param args
