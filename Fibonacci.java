@@ -19,9 +19,9 @@ public class Fibonacci {
 			throw new Exception("Illegal numVals argument in constructor for Fibonacci:  " + numVals);
 		}
 		int[] tmpFib = new int[numVals];
-		tmpFib[0] = 1;
+		tmpFib[0] = 0;
 		if (numVals >= 2) {
-			tmpFib[1] = 2;
+			tmpFib[1] = 1;
 			for (int i = 2; i < numVals; i++) {
 				tmpFib[i] = tmpFib[i-2] + tmpFib[i-1];
 			}
@@ -45,12 +45,12 @@ public class Fibonacci {
 			return series; 
 		} else if (numVals == 2) {
 			ArrayList<Integer> series = new ArrayList<Integer>();
+			series.add(0);
 			series.add(1);
-			series.add(2);
 			return series; 
 		} else  { // (numVals == 1) 
 			ArrayList<Integer> series = new ArrayList<Integer>();
-			series.add(1);
+			series.add(0);
 			return series;
 		}
 	}
